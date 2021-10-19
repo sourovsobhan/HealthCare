@@ -1,0 +1,19 @@
+/* .login-email {
+  margin-right: 80%;
+  margin-bottom: 10px;
+} */
+.background-color {
+  background-color: blueviolet;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 746px) {
+  .contactimg {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 747px) {
+  .contactimg {
+    margin-left: 40px;
+  }
+}

@@ -1,0 +1,12 @@
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+}

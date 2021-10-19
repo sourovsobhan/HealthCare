@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Dr.Yesmin khatun",
+    "specialist": "BDS – Bachelor of Dental Surgery.",
+    "description": "Dental surgery is any of a number of medical procedures that involve artificially modifying dentition; in other words, surgery of the teeth, gums and jaw bones.",
+    "img": "https://i.ibb.co/CV0Lwtq/woman-gf2b0b7c6b-1920.jpg",
+    "address": "dhaka",
+    "fee": "600"
+  },
+  {
+    "id": 2,
+    "name": "Dr.Tanzila Shikhder",
+    "specialist": "Paediatrics and Child Health",
+    "description": "A pediatrician is a medical doctor who manages the physical, behavioral, and mental care for children from birth until age 18. A pediatrician is trained to diagnose and treat a broad range of childhood illnesses, from minor health problems to serious diseases",
+    "img": "https://i.ibb.co/0DdQCsp/Portrait-of-beautiful-mature-woman-doctor-holding-digital-tablet-and-looking-at-camera-Confident-fem.jpg"
+  },
+
+  {
+    "id": 3,
+    "name": "Dr.Noyon",
+    "specialist": "Cardiology",
+    "description": "A cardiologist is a healthcare provider who has had extra training to treat problems of the heart and blood vessels. A cardiologist has at least 10 years of medical training.",
+    "img": "https://i.ibb.co/N7BzR4c/surgery-g4b9fb78aa-1920.jpg",
+    "address": "dhaka",
+    "fee": "600"
+  },
+  {
+    "id": 4,
+    "name": "Dr.Noyon",
+    "specialist": "Cardiology",
+    "description": "A cardiologist is a healthcare provider who has had extra training to treat problems of the heart and blood vessels. A cardiologist has at least 10 years of medical training.",
+    "img": "https://i.ibb.co/89fQ3FR/Doctors-rafiki-1.png",
+    "address": "dhaka",
+    "fee": "600"
+  },
+  {
+    "id": 5,
+    "name": "Dr.Moynul khan",
+    "specialist": "Cardiology",
+    "description": "A cardiologist is a healthcare provider who has had extra training to treat problems of the heart and blood vessels. A cardiologist has at least 10 years of medical training.",
+    "img": "https://i.ibb.co/wJwQqtx/Onsite-doctor-recruitment-agency-2x.jpg",
+    "address": "dhaka",
+    "fee": "600"
+  },
+  {
+    "id": 6,
+    "name": "Dr.Mosharof khan",
+    "specialist": "Cardiology",
+    "description": "A cardiologist is a healthcare provider who has had extra training to treat problems of the heart and blood vessels. A cardiologist has at least 10 years of medical training.",
+    "img": "https://i.ibb.co/S7Wf2fy/images.jpg",
+    "address": "dhaka",
+    "fee": "600"
+  },
+  {
+    "id": 7,
+    "name": "Dr.Sobahn hossain",
+    "specialist": "Cardiology",
+    "description": "A cardiologist is a healthcare provider who has had extra training to treat problems of the heart and blood vessels. A cardiologist has at least 10 years of medical training.",
+    "img": "https://i.ibb.co/DtDTVKK/images-1.jpg",
+    "address": "dhaka",
+    "fee": "600"
+  },
+  {
+    "id": 8,
+    "name": "Dr.Noyon",
+    "specialist": "Medicine specialist",
+    "description": "A cardiologist is a healthcare provider who has had extra training to treat problems of the heart and blood vessels. A cardiologist has at least 10 years of medical training.",
+    "img": "https://i.ibb.co/KwwjFzb/images-2.jpg",
+    "address": "dhaka",
+    "fee": "600"
+  },
+  {
+    "id": 9,
+    "name": "Dr.Saira khatun",
+    "specialist": "Hearth specialist",
+    "description": "A cardiologist is a healthcare provider who has had extra training to treat problems of the heart and blood vessels. A cardiologist has at least 10 years of medical training.",
+    "img": "https://i.ibb.co/4NC5kFS/9cb7336155c2f3bccfe46a1a7f4c76de.jpg",
+    "address": "dhaka",
+    "fee": "600"
+  }
+]
