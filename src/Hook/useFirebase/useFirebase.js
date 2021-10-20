@@ -60,7 +60,7 @@ const useFirebase = () => {
     setIsLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
       .then((res) => {})
-      .catch((error) => console.log(error.message))
+      .catch((error) => seteError(error.message))
       .finally(() => {
         setIsLoading(false);
       });
@@ -73,7 +73,7 @@ const useFirebase = () => {
       })
       .catch((error) => {
         const errorMessage = error.message;
-        console.log(errorMessage);
+        seteError(errorMessage);
       })
       .finally(() => {
         setIsLoading(false);
@@ -104,6 +104,7 @@ const useFirebase = () => {
     handleName,
     handleUserRegister,
     user,
+    error,
     handleLogin,
     isLoading,
   };

@@ -14,7 +14,7 @@ const Login = () => {
     hanldeEmail,
     hanldePassword,
     handleName,
-
+    error,
     handleLogin,
     handleUserRegister,
   } = useAuth();
@@ -42,6 +42,7 @@ const Login = () => {
         <h2 className="p-3 mb-3">Please log in</h2>
         <Row>
           <Col className="background-color">
+            <p className="text-danger">{error}</p>
             {!toggle && (
               <>
                 <h4 className="login-email">Name: </h4>
