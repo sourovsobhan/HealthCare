@@ -1,6 +1,6 @@
 # Health care website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://health-care-services-2a2d9.web.app/).
 
 ## Levels of Care:
 
@@ -11,7 +11,6 @@ Quaternary Care.
 
 ### Doctor Duties & Responsibilities
 
-Doctor Duties & Responsibilities
 Assess symptoms.
 Diagnose conditions.
 Prescribe and administer treatment.

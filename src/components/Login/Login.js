@@ -5,6 +5,7 @@ import contact from "../../images/contact/img-contact.jpg";
 import { useState } from "react";
 
 import useAuth from "./../../Hook/useFirebase/useAuth";
+import { useHistory, useLocation } from "react-router";
 
 const Login = () => {
   const {
@@ -36,7 +37,21 @@ const Login = () => {
   const handleRegister = () => {
     handleUserRegister(displayname, email, password);
   };
+  const handleLogin = () => {
+    handleUserLogin(email, password);
+  };
 
+  const history = useHistory();
+  const location = useLocation();
+  const redirectUrl = location?.state?.from || "/";
+  console.log(location.state);
+  const googleSignIn = () => {
+    handleGoogleSignIn()
+      .then((res) => {
+        history.push(redirectUrl);
+      })
+      .catch((error) => {});
+  };
   return (
     <div>
       <Container className="p-5 mt-5">
@@ -83,7 +98,7 @@ const Login = () => {
               </div>
             )}
             <div className="d-grid gap-2 mb-3">
-              <Button variant="dark" size="lg" onClick={handleUserLogin}>
+              <Button variant="dark" size="lg" onClick={handleLogin}>
                 Log In
               </Button>
             </div>
@@ -91,11 +106,16 @@ const Login = () => {
               <Button
                 variant="warning"
                 className="me-5"
-                onClick={handleGoogleSignIn}
+                className="google-button"
+                onClick={googleSignIn}
               >
                 Google Sign In
               </Button>
-              <Button variant="danger" onClick={handleGithubSignIn}>
+              <Button
+                variant="danger"
+                className="github-button"
+                onClick={handleGithubSignIn}
+              >
                 Github Sign In
               </Button>
             </div>

@@ -3,6 +3,7 @@ import useAuth from "../../Hook/useFirebase/useAuth";
 
 const PrivateRoute = ({ children, ...rest }) => {
   const { user } = useAuth();
+
   return (
     <Route
       {...rest}

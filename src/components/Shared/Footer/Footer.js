@@ -3,9 +3,9 @@ import "./Footer.css";
 import { Form, Row, Col, Container } from "react-bootstrap";
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer ">
       <Container>
-        <Row>
+        <Row sm={6} md={4}>
           <Col>
             <h1>HealthCare</h1>
             <p>

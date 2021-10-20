@@ -12,25 +12,29 @@ const Banner = () => {
           <Carousel.Item>
             <img className="d-block w-100" src={banner1} alt="First slide" />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>kidney surgery</h3>
+              <p>A nephrectomy is surgery to remove a kidney.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={banner2} alt="Second slide" />
 
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3>operation theater</h3>
+              <p>
+                An operating theater is a facility within a hospital where
+                surgical operations
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={banner3} alt="Third slide" />
 
             <Carousel.Caption>
-              <h3>Third slide label</h3>
+              <h3>Heart CheackUp</h3>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                order blood tests to check your cholesterol and blood sugar
+                levels..
               </p>
             </Carousel.Caption>
           </Carousel.Item>

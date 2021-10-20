@@ -10,3 +10,9 @@ nav a {
   margin-right: 10px;
   font-size: 20px;
 }
+
+@media only screen and (max-width: 746px) {
+  nav a {
+    padding: 10px;
+  }
+}

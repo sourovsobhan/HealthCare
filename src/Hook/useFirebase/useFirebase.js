@@ -25,14 +25,7 @@ const useFirebase = () => {
   const [error, seteError] = useState();
   const location = useHistory();
   const handleGoogleSignIn = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        location.push("/home");
-        console.log("sign in success");
-      })
-      .catch((error) => {
-        seteError(error.message);
-      });
+    return signInWithPopup(auth, googleProvider);
   };
   const handleGithubSignIn = () => {
     signInWithPopup(auth, githubProvider)

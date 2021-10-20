@@ -11,9 +11,19 @@
   .contactimg {
     margin-top: 20px;
   }
+  .github-button {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .google-button {
+    margin-right: -6px;
+  }
 }
 @media only screen and (min-width: 747px) {
   .contactimg {
     margin-left: 40px;
+  }
+  .github-button {
+    margin-left: 10px;
   }
 }
