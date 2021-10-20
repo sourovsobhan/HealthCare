@@ -29,7 +29,7 @@ const Header = () => {
               <Link to="/services">Services</Link>
               <Link to="/contact">Contact</Link>
               <Link to="/doctor">Doctor</Link>
-              {user?.email ? (
+              {user?.displayName ? (
                 <>
                   <Button variant="danger" onClick={handleLogOUt}>
                     Log-out

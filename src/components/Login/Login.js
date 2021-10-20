@@ -11,9 +11,12 @@ const Login = () => {
   const {
     handleGoogleSignIn,
     handleGithubSignIn,
-    handleUserLogin,
+    hanldeEmail,
+    hanldePassword,
+    handleName,
+
+    handleLogin,
     handleUserRegister,
-    user,
   } = useAuth();
 
   const [toggle, setToggle] = useState(true);
@@ -21,30 +24,11 @@ const Login = () => {
   const toggleLogin = () => {
     setToggle(!toggle);
   };
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const [displayname, setDisplayname] = useState();
-
-  const hanldeEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const hanldePassword = (e) => {
-    setPassword(e.target.value);
-  };
-  const handleName = (e) => {
-    setDisplayname(e.target.value);
-  };
-  const handleRegister = () => {
-    handleUserRegister(displayname, email, password);
-  };
-  const handleLogin = () => {
-    handleUserLogin(email, password);
-  };
 
   const history = useHistory();
   const location = useLocation();
   const redirectUrl = location?.state?.from || "/";
-  console.log(location.state);
+
   const googleSignIn = () => {
     handleGoogleSignIn()
       .then((res) => {
@@ -64,7 +48,7 @@ const Login = () => {
                 <Form.Control
                   type="text"
                   placeholder="Enter name"
-                  onBlur={handleName}
+                  onChange={handleName}
                 />
                 <br />
               </>
@@ -81,7 +65,7 @@ const Login = () => {
             <Form.Control
               type="password"
               placeholder="Enter Yourpassword"
-              onBlur={hanldePassword}
+              onChange={hanldePassword}
             />
             <br />
 
@@ -92,7 +76,11 @@ const Login = () => {
 
             {!toggle && (
               <div className="d-grid gap-2 mb-3">
-                <Button variant="primary" size="lg" onClick={handleRegister}>
+                <Button
+                  variant="primary"
+                  size="lg"
+                  onClick={handleUserRegister}
+                >
                   Register
                 </Button>
               </div>

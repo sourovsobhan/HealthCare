@@ -21,16 +21,35 @@ const useFirebase = () => {
   const googleProvider = new GoogleAuthProvider();
   const githubProvider = new GithubAuthProvider();
 
-  const [user, setUser] = useState();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [displayname, setDisplayname] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+  const hanldeEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const hanldePassword = (e) => {
+    setPassword(e.target.value);
+  };
+  const handleName = (e) => {
+    setDisplayname(e.target.value);
+  };
+
+  const handleLogin = () => {
+    handleUserLogin(email, password);
+  };
+
+  const [user, setUser] = useState({});
   const [error, seteError] = useState();
   const location = useHistory();
+
   const handleGoogleSignIn = () => {
     return signInWithPopup(auth, googleProvider);
   };
   const handleGithubSignIn = () => {
     signInWithPopup(auth, githubProvider)
       .then((result) => {
-        setUser(result.user);
+        // setUser(result.user);
       })
       .catch((error) => {
         seteError(error.message);
@@ -38,32 +57,26 @@ const useFirebase = () => {
   };
 
   const handleUserRegister = (email, password, displayname) => {
+    setIsLoading(true);
     createUserWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        console.log(result.user);
-        updateProfile(auth.currentUser, {
-          displayName: displayname,
-        })
-          .then(() => {
-            // Profile updated!
-            // ...
-          })
-          .catch((error) => {
-            // An error occurred
-            // ...
-          });
-      })
-      .catch((error) => {
-        const errorMessage = error.message;
+      .then((res) => {})
+      .catch((error) => console.log(error.message))
+      .finally(() => {
+        setIsLoading(false);
       });
   };
   const handleUserLogin = (email, password) => {
+    setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
-        setUser(result.user);
+        // setUser(result.user);
       })
       .catch((error) => {
         const errorMessage = error.message;
+        console.log(errorMessage);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
@@ -78,16 +91,21 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
+      setIsLoading(false);
     });
   }, []);
 
   return {
     handleGoogleSignIn,
-    user,
     handleGithubSignIn,
-    handleUserRegister,
-    handleUserLogin,
     handleLogOUt,
+    hanldeEmail,
+    hanldePassword,
+    handleName,
+    handleUserRegister,
+    user,
+    handleLogin,
+    isLoading,
   };
 };
 
